@@ -5,7 +5,7 @@ import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Card from '@mui/material/Card'
 import { ButtonGroup } from '@mui/material'
-import StatsTable from './StatsTable'
+import TableContainer from './TableContainer'
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 
 const queryClient = new QueryClient()
@@ -33,7 +33,7 @@ function App() {
           <Typography variant="h1" my={4}> {count} </Typography>
         </Card>
         <QueryClientProvider client={queryClient}>
-          <StatsTable/>
+          <TableContainer/>
         </QueryClientProvider>
       </Box>
     </Container>
